@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Sai bro res</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?t=st=1689918050~exp=1689921650~hmac=1162b1b1cd90e065c3b0ac343827cb20c54ea18d38d16843af5e9447118fda86&w=1060");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px" color="black">THE<br>AK RESTRO</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>AK RESTRO</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Biriyani');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Biriyani</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dessert</div>
+      </a>
+    </div>
+
+    <div id="Biriyani" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken Dum Biriyani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹350/-</span></h1>
+      <p class="w3-text-grey">Fresh Juicy Chicken Made Dum with Flovourful Rice</p>
+      <hr>
+   
+      <h1><b>Chicken Fry Piece Biriyani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹250/-</span></h1>
+      <p class="w3-text-grey">Tasty Fried Chicken with Extra Spices</p>
+      <hr>
+      
+      <h1><b>Boneless Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹250/-</span></h1>
+      <p class="w3-text-grey">Boneless Juciy Chicken</p>
+      <hr>
+
+      <h1><b>Mushroom Biriyani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹190/-</span></h1>
+      <p class="w3-text-grey">Tasty Mushrooms in A Delightful Biriyani</p>
+      <hr>
+
+      <h1><b>Prawns Biriyani</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹450/-</span></h1>
+      <p class="w3-text-grey">Cheif's Special Prawns Biriyani with Tender Prawns...!(Compliment Drink)</p>
+      <hr>
+
+      <h1><b>Fish Biriyani</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹300/-</span></h1>
+      <p class="w3-text-grey">Floavurful Rice with Awesome Fish</p>
+    </div>
+
+    <div id="Starters" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹299</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>cheese bread roll</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹249</span></h1>
+      <p class="w3-text-grey">a fried snake item,tasty cheese bread rools are sure to appeal to all</p>
+      <hr>
+      
+      <h1><b>vegetable lollipop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹149</span></h1>
+      <p class="w3-text-grey">kids will definetly enjoy and ask for more</p>
+      <hr>
+
+      <h1><b>crispy corn</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹199</span></h1>
+      <p class="w3-text-grey">this corn fry is a simple yet delicious evening snack</p>
+    </div>
+
+
+    <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Deep Fried Churros</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹299</span></h1>
+      <p class="w3-text-grey">churros are deep-fried and rolled in a sugar and cinnamon combination</p>
+      <hr>
+   
+      <h1><b>Pastries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹149</span></h1>
+      <p class="w3-text-grey">Fruit,Chocolate,Nuts,and Spices</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹149</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Gelatin</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹199</span></h1>
+      <p class="w3-text-grey">Jello,Marshmallows,Geltin De Mosaico</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Biriyani's Restaurant was founded in Eluru by Mr. SAI in the location of Eluru.We built our restaurant with a Beautiful ambiance its a good place to visit our restaurant with family and hope you can have a great food with reasonable prices.</p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="data:image/jpeg;base64,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" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="https://watermark.lovepik.com/photo/20211120/large/lovepik-interior-design-of-modern-chinese-advanced-picture_500435601.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://media.cntraveler.com/photos/5a749e118dcc5b776f152d8c/16:9/w_2560,c_limit/Elizabeth-Street-Cafe_Casey-Dunn_2018_est3-1733.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 8501856810</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Thank You For Visiting Us...!</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
